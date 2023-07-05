@@ -1,6 +1,8 @@
-b23 = ""
+b = []
 a = 23
-while a != 0:
-    a, r = divmod(a, 2)
-    b23 = str(r) + b23
-print(b23)
+while True:
+    b.append(a % 2)
+    a //= 2
+    if a == 0:
+        break
+print(*b[::-1])
