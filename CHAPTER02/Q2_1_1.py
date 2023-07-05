@@ -1,4 +1,4 @@
-print(341 % 253)
-print(253 % 88)
-print(88 % 77)
-print(77 % 11)
+import math
+
+gcd = math.gcd(253, 341)
+print(gcd)
