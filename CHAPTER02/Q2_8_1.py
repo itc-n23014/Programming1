@@ -1,2 +1,2 @@
-reverse_even = [i for i in list(range(1, 11)) if i % 2 == 0][::-1]
+reverse_even = [i for i in list(range(1, 11))][::-2]
 print(reverse_even)
