@@ -1,10 +1,8 @@
 def f(n=100):
-    list = [3, 0, 2]
-    a, b, c = 3, 0, 2
-    while a < n:
-        list.append(a)
-        a, b, c = b, c, a + b
-    return list
+    r = [3, 0, 2]
+    while (a := r[-3] + r[-2]) < n:
+        r.append(a)
+    return r
 
 
-print(f())
+print(f(100))
