@@ -5,4 +5,5 @@ def f(n):
         a, b = b, a + b
 
 
-f(1000)
+n = int(input())
+f(n)
