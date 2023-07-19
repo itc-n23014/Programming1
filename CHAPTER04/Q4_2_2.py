@@ -5,4 +5,5 @@ def f(n=100):
     return r
 
 
-print(f(100))
+n = int(input())
+print(f(n))
