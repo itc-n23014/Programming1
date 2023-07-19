@@ -3,4 +3,4 @@ with open("number.txt", "r") as f:
     for data in f:
         num = int(data)
         sum += num
-    print(sum)
+    print(sum)  # 指定ファイルに記述された数字の和「55」が出力される
