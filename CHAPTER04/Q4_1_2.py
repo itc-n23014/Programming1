@@ -1,10 +1,8 @@
 def f(n):
-    result = []
-    a, b = 0, 1
-    while a < n:
-        result.append(a)
-        a, b = b, a + b
-    return result
+    r = [0, 1]
+    while (a := r[-2] + r[-1]) < n:
+        r.append(a)
+    return r
 
 
 print(f(1000))
