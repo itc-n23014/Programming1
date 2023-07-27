@@ -1,18 +1,29 @@
-vote_num = 0
+# グローバル関数を使った例
+n = 0
 
 
 def vote():
     print("投票します")
-    global vote_num
-    vote_num += 1
+    global n
+    n += 1
 
 
-def reset_box():
-    global vote_num
+def reset():
+    global n
     print("箱を空にします")
-    vote_num = 0
+    n = 0
 
 
-def check_box():
-    global vote_num
-    print("票の数は{}です".format(vote_num))
+def check():
+    global n
+    print("票の数は{}です".format(n))
+
+
+while True:
+    a = input("vote or reset or check: ")
+    if a == "vote":
+        vote()
+    elif a == "reset":
+        reset()
+    else:
+        check()
