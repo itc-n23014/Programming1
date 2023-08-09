@@ -84,7 +84,7 @@
 
 * 5.2 リスト内包表記([問題1](./CHAPTER05/Q5_2_1.py),[問題2](./CHAPTER05/Q5_2_2.py),[問題3](./CHAPTER05/Q5_2_3.py))
 
-* 5.3 del を使った削除([問題1](./CHAPTER05/Q5_3_1.py),[問題2](./CHAPTER05/Q5_3_2.py),[問題3](./CHAPTER05/Q5_3_3.py))
+* 5.3 del を使った削除([問題1](./CHAPTER05/Q5_3_1.py),[問題2](./CHAPTER05/Q5_3_2.py))
 
 
 * 5.4 タプル([問題1](./CHAPTER05/Q5_4_1.py),[問題2](./CHAPTER05/Q5_4_2.py),[問題3](./CHAPTER05/Q5_4_3.py))
