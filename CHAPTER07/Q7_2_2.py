@@ -1,9 +1,9 @@
 def square(x):
-    try:
-        x = float(x)
-        return x * x
-    except:
-        return "TypeError"
+    if isinstance(x, str) and x.isdigit():
+        x = int(x)
+    elif not isinstance(x, (int, float)):
+        raise ValueError("square", x)
+    return x**x
 
 
 x = input("二乗する値を入力してください: ")
