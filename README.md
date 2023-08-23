@@ -87,7 +87,7 @@
 * 5.3 del を使った削除([問題1](./CHAPTER05/Q5_3_1.py),[問題2](./CHAPTER05/Q5_3_2.py))
 
 
-* 5.4 タプル([問題1](./CHAPTER05/Q5_4_1.py),[問題2](./CHAPTER05/Q5_4_2.py),[問題3](./CHAPTER05/Q5_4_3.py))
+* 5.4 タプル([問題1](./CHAPTER05/Q5_4_1.py),[問題2](./CHAPTER05/Q5_4_2.py),[問題3](./CHAPTER05/Q5_4_3.py),[問題4](./CHAPTER05/Q5_4_4.py)
 
 * 5.5 集合（set）([問題1](./CHAPTER05/Q5_5_1.py).[問題2](./CHAPTER05/Q5_5_2.py))
 
