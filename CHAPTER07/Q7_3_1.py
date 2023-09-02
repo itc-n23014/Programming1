@@ -1,17 +1,17 @@
-color_reference = {1: "red", 2: "blue", 3: "yellow", 4: "green", 5: "purple"}
+refference = {1: "red", 2: "blue", 3: "yellow", 4: "green", 5: "purple"}
 
 
-class MyDictKeyError(Exception):
+class MyDictkeyError(Exception):
     def __init__(self, key):
         self.key = key
 
     def __str__(self):
-        return "辞書にKeyが登録されていません {0}".format(self.key)
+        return f"辞書にkeyが登録されていません {self.key}"
 
 
 def get_dict_value(dict_tbl, key):
     if key not in dict_tbl:
-        raise MyDictKeyError(key)
+        raise MyDictkeyError(key)
     else:
         return dict_tbl[key]
 
@@ -19,12 +19,12 @@ def get_dict_value(dict_tbl, key):
 my_dict = {1: "red", 2: "blue", 3: "yellow"}
 
 try:
-    my_color = get_dict_value(my_dict, 5)
-except MyDictKeyError as err:
+    my_col = get_dict_value(my_dict, 5)
+except MyDictkeyError as err:
     print(err)
-    key = err.key  # err.args[0] ではなく err.key を使用します
-    my_dict[key] = color_reference[key]
-    print(color_reference[key], "をmy_dictに追加しました")
-    my_color = color_reference[key]
+    key = err.args[0]
+    my_dict[key] = refference[key]
+    print(key, refference[key], "をmy_dictに追加")
+    my_col = key, refference[key]
 
-print(my_color)
+my_col
