@@ -39,4 +39,4 @@ def event5():
 func_list = [event1, event2, event3, event4, event5]
 for f in func_list:
     f()
-    print("After {}: {}".format(f.__name__, x))
+    print(f"After {f.__name__}: {x}")
