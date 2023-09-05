@@ -9,24 +9,16 @@ class Rectangle:
         self.area = self.calc_area()
 
     def calc_perimeter(self):
-        w = self.width
-        h = self.height
-        return (w + h) * 2
+        return (self.width + self.height) * 2
 
     def calc_area(self):
-        w = self.width
-        h = self.height
-        return w * h
+        return self.width * self.height
 
     def show_attributes(self):
-        ang = self.angle
-        n = self.name
-        w = self.width
-        h = self.height
-        p = self.perimeter
-        a = self.area
-        print(f"name: {n}, width: {w}, height: {h}, angle: {ang}")
-        print(f"perimeter: {p}, area: {a}")
+        print(
+            f"name: {self.name}, width: {self.width}, height: {self.height}, angle: {self.angle}"
+        )
+        print(f"perimeter: {self.perimeter}, area: {self.area}")
 
 
 class Square(Rectangle):
