@@ -4,11 +4,8 @@ data = [
     ["0003", "Female", "Tanaka", "Yuko", 25, "Saitama"],
     ["0004", "Male", "Suzuki", "Ichiro", 35, "Hokkaido"],
 ]
-member = {}
-for record in data:
-    key = record[0]
-    info = record[1:]
-    member[key] = info
+
+member = {record[0]: record[1:] for record in data}
 
 print("number", "information", sep="\t")
 for key, info in member.items():
