@@ -7,11 +7,7 @@ data = [
     "02,0003,Male,Jackson,David,22,Florida".split(","),
 ]
 
-member_info = {}
-for record in data:
-    key = (record[0], record[1])
-    info = record[2:]
-    member_info[key] = info
+member_info = {(record[0], record[1]): record[2:] for record in data}
 
 print("number", "information", sep="\t")
 for key, info in member_info.items():
