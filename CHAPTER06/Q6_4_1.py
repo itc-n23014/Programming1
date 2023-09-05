@@ -1,17 +1,11 @@
 import random
-
-%%time
-
+from itertools import islice
 
 random.seed(1)
-msgs = 'a,b,c,d'.split(',')
+msgs = "Hi,Hello,Good morning,See you later,How are you,Have a good day".split(",")
+with open("some.txt", "w") as f:
+    f.writelines("{}, {}\n".format(i, random.choice(msgs)) for i in range(1000000))
 
-with open('some.txt', 'w') as f:
-    for i in range(10000):
-        f.write("{},{}\n".format(i, random.choice(msgs)))
-
-with open('some.txt', 'r') as f:
-    for c, l in enumerate(f):
-        print(l, end=" ")
-        if c == 2:
-            break
+with open("some.txt") as f:
+    for line in islice(f, 3):
+        print(line, end="")
